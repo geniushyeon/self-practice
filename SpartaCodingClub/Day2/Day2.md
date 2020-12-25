@@ -43,3 +43,45 @@
     }
 }
 ```
+
+# 3. Javascript 맛보기
+봉투 열 수 있게 만들어보기
+1. <head> 끝나기 전에
+```javascript
+<script>
+        function openLetter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+</script>
+```
+추가
+2. 봉투 div에 `onclick="openLetter()"` 추가
+
+# 4. 눈오는 효과 붙이기
+라이브러리 찾아서 넣기
+- 구글링 잘하기(ex. snow javascript)
+- title 아래에
+```html
+<script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+```
+추가<br/>
+![screenshot](img/snowing.png)<br/>
+눈 오는 효과 적용 완료!
+
+# 5. og 태그 넣기
+카카오톡으로 링크 공유할 때 뜨는 미리보기 이미지를 위한 태그.
+```html
+<meta property="og:image" content="https://www.christmastreeassociation.org/wp-content/uploads/2016/06/multiple-christmas-trees-in-one-household-800x400.jpg">
+<meta property="og:title" content="지현이의 카드">
+<meta property="og:description" content="2020년을 보내며">
+```
+- `og:image`: 미리보기 이미지
+- `og:title`: 미리보기 타이틀
+- `og:description`: 타이틀 아래의 간략한 설명
+
+# 6. favicon
+html 페이지를 웹에서 열었을 때 타이틀 왼쪽에 조그맣게 뜨는 아이콘
+```html
+<link rel="shortcut icon" href="https://freepngimg.com/download/christmas/26196-6-christmas-stocking.png">
+```
