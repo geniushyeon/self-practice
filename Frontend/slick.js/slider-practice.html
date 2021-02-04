@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.min.js"></script>
+    <!-- slick js-->
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- slick css -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- xeicon -->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+</head>
+<style>
+    /* 포스터 크기는 알아서 조정되는듯. 겉에 둘러싼 div 크기를 바꿔야함.*/
+    .slider-wrapper {
+        position: relative;
+        width: 900px;
+        padding: 20px;
+        /*화살표 좀 더 예쁘게 보이기 위함*/
+    }
+
+    .slider-wrapper button {
+
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+    .slider-wrapper .slick-prev {
+        left: 0;
+        font-size: 0;
+        color: transparent;
+    }
+
+    .slider-wrapper .slick-prev:before {
+        content: "\e93d";
+
+    }
+
+    .slider-wrapper .slick-next {
+        right: 0;
+        font-size: 0;
+        color: transparent;
+    }
+
+    .slider-wrapper button:before {
+        font-family: "xeicon";
+        color: #fff;
+        font-size: 35px;
+    }
+
+    .slider-wrapper .slick-next:before {
+        content: "\e940";
+    }
+</style>
+
+<body>
+    <section class="slider-wrapper">
+
+        <div><img src="img/220px-영화_소울.jpg" /></div>
+        <div><img src="img/220px-영화_소울.jpg" /></div>
+        <div><img src="img/220px-영화_소울.jpg" /></div>
+        <div><img src="img/220px-영화_소울.jpg" /></div>
+        <div><img src="img/220px-영화_소울.jpg" /></div>
+        <div><img src="img/220px-영화_소울.jpg" /></div>
+        <div><img src="img/220px-영화_소울.jpg" /></div>
+    </section>
+
+    <script>
+        $('.slider-wrapper').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 4
+        });
+    </script>
+
+</body>
+
+</html>
