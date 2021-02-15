@@ -283,12 +283,12 @@ public class MemberController {
 		Utils utils = new Utils();
 		MemberService memberService = new MemberService();
 		
-		memberVo.setMemberId("jhlee2");
+		memberVo.setMemberId("jhlee");
 		memberVo.setMemberPwdSalt(utils.getSalt());
 		memberVo.setMemberPwd(utils.getEncrypt("1234", memberVo.getMemberPwdSalt()));
 		
 		memberService.signup(memberVo);
-    // 여기까지 회원가입
+    	// 여기까지 회원가입
 		
 //    String result = utils.getEncrypt("사용자가 입력한 비밀번호", "DB에 저장된 해당 사용자의 salt 문자열");
 		String result = utils.getEncrypt("1234", "3891c9104e6fa5ca2367");
