@@ -3,7 +3,13 @@
 ### 1. commit message 수정하기
 #### 가장 최근의 커밋 수정
 ```text
-git commit --amend
+$ git commit --amend
 ```
 - 가장 최근(=가장 마지막)에 커밋한 내용 수정 가능.
 - 수정 완료 후 `esc` -> `:wq` 입력하면 됨 
+
+## 20210219
+### pull 잘못 받았을 때 되돌리기
+```text
+$ git reset --hard ORIG_HEAD
+```
