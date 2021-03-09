@@ -13,3 +13,20 @@ $ git commit --amend
 ```text
 $ git reset --hard ORIG_HEAD
 ```
+
+## 20210309
+### git commit 취소
+1. commit 취소 후 staged 상태로 워킹 디렉토리에 보존
+```text
+$ git reset --soft HEAD^
+```
+ 2. commit 취소 후 unstaged 상태로 워킹 디렉토리에 보존
+```text
+$ git reset --mixed HEAD^ // 기본 옵션
+$ git reset HEAD^ // 위와 동일
+$ git reset HEAD~2 // 마지막 2개의 commit 취소
+```
+3. commit 취소 후 unstaged 상태로 워킹 디렉토리에서 삭제
+```text
+$ git reset --hard HEAD^
+```
