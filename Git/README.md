@@ -30,3 +30,11 @@ $ git reset HEAD~2 // 마지막 2개의 commit 취소
 ```text
 $ git reset --hard HEAD^
 ```
+
+## 20210312
+### git add 취소
+- add한 파일들을 unstaged 상태로 변경
+```text
+$ git reset HEAD [취소할파일명]
+```
+- 뒤에 파일명이 없으면 add한 파일 전체를 취소
