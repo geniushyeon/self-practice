@@ -38,3 +38,7 @@ $ git reset --hard HEAD^
 $ git reset HEAD [취소할파일명]
 ```
 - 뒤에 파일명이 없으면 add한 파일 전체를 취소
+
+## 20210412
+- [2주 동안 매일🔥](https://learngitbranching.js.org/?locale=ko)
+  - git branching 학습
