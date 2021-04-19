@@ -11,7 +11,6 @@ const captainAmerica = {
 };
 
 function print({alias, name, actor}) {
-	
 	const text = `${alias}(${name}) 역할을 맡은 배우는 ${actor}입니다.`;
 	console.log(text); 
 }
