@@ -48,3 +48,6 @@ $ git reset HEAD [취소할파일명]
 
 ## 2021.04.17
 - [About Gitmoji](https://treasurebear.tistory.com/70)
+
+## 2021.06.25
+- [특정 브랜치만 클론 받기](20210625.md)
